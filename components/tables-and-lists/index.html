@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Styleguide Lite</title>
+    <link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/libs/prism.css" media="screen" />
+<link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/libs/sandstone.css" media="screen" />
+<link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/styleguide-lite.css" media="screen" />
+
+  </head>
+  <body class="styleguide">
+    <header class="main-header">
+      <h1 class="site-title">Mozilla Styleguide</h1>
+    </header>
+
+    <nav class="nav-main" role="navigation">
+  <header>
+    <h2>Main Navigation</h2>
+  </header>
+  <ol>
+    <li><a href="https://mozilla.github.io/styleguide/index.html">How to use</a></li>
+    <li><a href="https://mozilla.github.io/styleguide/brands/index.html">Brands</a></li>
+    <li id="style" class="moz-accordion-header"><a href="#style">Style</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/style/color.html">Color</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/style/imagery.html">Imagery</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/style/typography.html">Typography</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/style/icons.html">Icons</a></li>
+      </ul>
+    </li>
+    <li id="components" class="moz-accordion-header"><a href="#components">Components</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/components/grid/index.html">Grid</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/buttons/index.html">Buttons</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/glyphs/index.html">Glyphs</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/headings/index.html">Headings</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/tables-and-lists/index.html">Tables and Lists</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/forms/index.html">Forms</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/footer/index.html">Footer</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/social/index.html">Social and Sharing</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/components/widgets/index.html">Widgets</a></li>
+      </ul>
+    </li>
+    <li id="motion" class="moz-accordion-header"><a href="#motion">Motion</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/motion/video.html">Video</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/motion/animation.html">Web Animation</a></li>
+      </ul>
+    </li>
+    <li id="copy_language" class="moz-accordion-header"><a href="#copy_language">Copy and Language</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/copy/tone.html">Tone</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/copy/rules.html">Rules</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/copy/localization.html">Localization</a></li>
+      </ul>
+    </li>
+    <li id="templates" class="moz-accordion-header"><a href="#templates">Starter Templates</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/templates/product.html">Product Page</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/templates/legal.html">Legal/Policy detail page</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/templates/download.html">Campaign download page</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/templates/firstrun.html">Firstrun page</a></li>
+      </ul>
+    </li>
+    <li id="resources" class="moz-accordion-header"><a href="#resources">Resources</a>
+      <ul>
+        <li><a href="https://github.com/mozilla/styleguide" rel="external">Github</a></li>
+        <li><a href="">Design @Firefox</a></li>
+        <li><a href="">Bugzilla</a></li>
+        <li><a href="https://github.com/mozilla/styleguide/blob/master/README.md" rel="external">Contribute</a></li>
+      </ul>
+    </li>
+  </ol>
+</nav>
+
+
+    <main class="main-content" role="main" tabindex="-1">
+      <h2>Tables and Lists</h2>
+
+      <section id="table">
+        <h3>Tables</h3>
+        <p>Tables have no base styling in Sandstone (apart from the browser defaults).
+          Use the <code>.table</code> class to display tabular data with a bit more polish.</p>
+
+        <div class="sample-container">
+          <table class="table">
+            <caption>Table caption</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">Column</th>
+                <th scope="col">Column</th>
+                <th scope="col">Column</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Row</th>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr>
+                <th scope="row">Row</th>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;table class="table">
+&lt;caption>Table caption&lt;/caption>
+&lt;thead>
+&lt;tr>
+  &lt;td>&lt;/td>
+  &lt;th scope="col">Column&lt;/th>
+  &lt;th scope="col">Column&lt;/th>
+  &lt;th scope="col">Column&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+  &lt;th scope="row">Row&lt;/th>
+  &lt;td>Cell&lt;/td>
+  &lt;td>Cell&lt;/td>
+  &lt;td>Cell&lt;/td>
+&lt;/tr>
+&lt;tr>
+  &lt;th scope="row">Row&lt;/th>
+  &lt;td>Cell&lt;/td>
+  &lt;td>Cell&lt;/td>
+  &lt;td>Cell&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+</code>
+</pre>
+        </aside>
+      </section>
+
+      <section id="ul">
+        <h3>Unordered lists</h3>
+        <div class="sample-container">
+          <ul>
+            <li>list item</li>
+            <li>list item
+              <ul>
+                <li>nested list</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;ul>
+&lt;li>list item&lt;/li>
+&lt;li>list item
+&lt;ul>
+  &lt;li>nested list&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+</code>
+</pre>
+        </aside>
+      </section>
+
+      <section id="ol">
+        <h3>Ordered lists</h3>
+        <div class="sample-container">
+          <ol>
+            <li>list item</li>
+            <li>list item
+              <ol>
+                <li>nested list</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;ol>
+&lt;li>list item&lt;/li>
+&lt;li>list item
+&lt;ol>
+  &lt;li>nested list&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+</code>
+</pre>
+        </aside>
+      </section>
+
+      <section id="unstyled">
+        <h3>Unstyled lists</h3>
+        <p>It’s often handy to use an ordered or unordered list in for semantic
+          markup while avoiding any default styling, either from the browser or
+          from Sandstone. Use the <code>.unstyled</code> class to override the
+          default styling. These list items have no markers or indentation.</p>
+
+        <div class="sample-container">
+          <ul class="unstyled">
+            <li>list item</li>
+            <li>list item</li>
+          </ul>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;ul class="unstyled">
+&lt;li>list item&lt;/li>
+&lt;li>list item&lt;/li>
+&lt;/ul>
+</code>
+</pre>
+        </aside>
+      </section>
+
+      <section id="dl">
+        <h3>Definition lists</h3>
+        <p>Terms in standard definition lists recieve the same general styling as
+          top-level headings (<code>h1</code>). This doesn’t make a lot of sense
+          and is almost always undesirable, hence why it seems alternate styles
+          for definition lists were created over time. We should fix this in Sandstone,
+          but I’m documenting it here for now.</p>
+
+        <div class="sample-container">
+          <dl>
+            <dt>Term</dt>
+            <dd>Description</dd>
+          </dl>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;dl>
+&lt;dt>Term&lt;/dt>
+&lt;dd>Description&lt;/dd>
+&lt;/dl>
+</code>
+</pre>
+        </aside>
+      </section>
+
+      <section id="dl-simple">
+        <h3>Definition lists, simple</h3>
+        <p>Simpler definition lists, with more reasonably sized terms. This should
+          probably be the base style for this element.</p>
+
+        <div class="sample-container">
+          <dl class="simple">
+            <dt>Term</dt>
+            <dd>Description</dd>
+          </dl>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;dl class="simple">
+&lt;dt>Term&lt;/dt>
+&lt;dd>Description&lt;/dd>
+&lt;/dl>
+</code>
+</pre>
+        </aside>
+      </section>
+
+      <section id="dl=faq">
+        <h3>Frequently Asked Questions</h3>
+        <p>Lists of questions and their answers are marked up as a definition list.</p>
+
+        <div class="sample-container">
+          <dl class="faq">
+            <dt>Is this a question?</dt>
+            <dd>Yes. Yes it is.</dd>
+          </dl>
+        </div>
+
+        <aside class="code-sample show">
+          <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;dl class="faq">
+&lt;dt>Is this a question?&lt;/dt>
+&lt;dd>Yes. Yes it is.&lt;/dd>
+&lt;/dl>
+</code>
+</pre>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+  <div class="footer-logo">
+    <a href="https://mozilla.org"><img src="https://mozilla.github.io/styleguide/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+  </div>
+
+  <div class="footer-license">
+    <p>Portions of this content are &copy;1998–2016 by individual mozilla.org contributors. Content available under a <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>.</p>
+  </div>
+
+  <ul class="footer-nav">
+    <li><a href="https://github.com/mozilla/styleguide">Contribute to this page</a></li>
+    <li><a href="https://mozilla.org/about/contact.html#map-mountain_view">Contact Us</a></li>
+    <li><a href="https://mozilla.org/privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</footer>
+
+
+    <script src="https://mozilla.github.io/styleguide/media/js/libs/jquery.js"></script>
+<script src="https://mozilla.github.io/styleguide/media/js/libs/prism.js" data-manual></script>
+<script src="https://mozilla.github.io/styleguide/media/js/styleguide-lite.js"></script>
+
+  </body>
+</html>
